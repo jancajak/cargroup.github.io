@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Site of company providing car insurence">
+    <meta name="keywords" content="insurence, car, safety">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="images/ico.svg" />
+    <title>CarGroup | Home</title>
+  </head>
+  <body>
+    <header class="dialog_blackout">
+      <div class="logo_div">
+        <img id="logo" src="images/logo.jpg" alt="Logo" width="150px" height="100px">
+      </div>
+      <h1 class="company_name">CarGroup Inc.</h1>
+
+        <div class="header_div heading">
+          <nav>
+            <ul class="navbar">
+              <li class="mobile_menu active"><a href="index.html">Home</a></li>
+              <li class="mobile_menu"><a href="about.html">About</a></li>
+              <li class="mobile_menu"><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+
+    </header>
+
+    <section class="dialog_blackout">
+        <div class="picture">
+          <p class="picture_heading">Find your way to safety, even for your car</p> <br>
+          <button id="info_button" type="button" name="button"><span id="info_button_txt">Get more info</span></button>
+        </div>
+    </section>
+
+    <section class="main-text dialog_blackout">
+      <article >
+        <h1 class="main_heading">Who we are?</h1>
+        <ul>
+          <li>Number one in car insurence</li>
+          <li>Stable company with great reward system</li>
+          <li>Your friend, when it gets tough</li>
+        </ul><br>
+        <p> Ahooj Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </article>
+    </section>
+
+    <section class="sidebar dialog_blackout">
+      <aside>
+        <div class="first_aside">
+          <div class="heading aside">
+            <h3>Get to know your price</h3>
+          </div>
+          <div class="calc">
+            <h4 class="calc_heading">Your engine capacity</h4>
+            <input id="range_volume" type="range" name="your_volume" valueAsNumber min="1.0" max="6.0" step="0.1"><span class="input_calc"><span  id="input_volume">1.8</span> l</span></input><br>
+            <h4 class="calc_heading">Your age</h4>
+            <input id="range_age" type="range" name="your_age" valueAsNumber min="18" max="85" step="1"><span class="input_calc"><span id="input_age">18</span> year's old</span></input></br>
+            <div class="contact_session">
+              <output class="price_output" id="range_output" name="result">$<span id="your_price">100</span>/ year</output>
+              <button id="get_contact_btn" class="get_contact_btn" type="button" name="get_contact_btn">Contact Me</button>
+            </div>
+        </div>
+      </div>
+      <div class="second_aside">
+        <div class="heading aside">
+          <h3>What you can achive?</h3>
+        </div>
+        <ul class="advantage">
+          <li>Calm sleep</li>
+          <li>Smile on your face</li>
+          <li>Something else</li>
+        </ul>
+      </div>
+      </aside>
+    </section>
+
+    <dialog id="dialog">
+      <form class="contact_form" action="index.html" method="get">
+        <div class="heading aside dialog_heading">
+          <a href="#"><img id="close_dialog" src="images/close_image.png" alt="close" height="30px" width="30px"></a>
+          <h3>CarGroup Inc.</h3>
+        </div>
+        <div class="container_dialog">
+          <h4 class="calc_heading">Your name</h4>
+          <input required id="name_input" class="dialog " type="text" name="cust_name" placeholder="John Smith">
+          <h4 class="calc_heading">Your phone</h4>
+          <input required id="sub_number" class="dialog " type="text" name="cust_number" placeholder="tel.: +44 11 3333 3333">
+          <h4 class="calc_heading">Your price</h4>
+          <p class="dialog_price">$<span id=sub_price class="calc_price">100</span></p>
+          <input class="" id="data_checkbox" type="checkbox" name="checkbox" checked>
+          <label class="sub_checkbox_label" for="#data_checkbox">I agree proccessing my personal information by CarGroup Inc.</label><br>
+          <div id="error_number" class="error">
+            <p class="wrong">Please provide a valid UK number !</p>
+          </div>
+          <div id="error_checkbox" class="error">
+            <p class="wrong">Please agree to proccess your information !</p>
+          </div>
+          <div id="error_name" class="error">
+            <p class="wrong">Please fullfill your name !</p>
+          </div>
+          <button id="contact_submit_btn" class="dialog_btn get_contact_btn" type="button" name="sub_button">Submit</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="end_dialog">
+      <div class="heading aside dialog_heading">
+        <h3>CarGroup Inc.</h3>
+      </div>
+      <div class="container_dialog">
+        <h4 class="calc_heading">Thank you!</h4>
+        <button class="get_contact_btn" id="leave" type="button" name="button">Okay</button>
+      </div>
+    </dialog>
+
+    <footer class="footer dialog_blackout">
+      <p>2018 | &copy CarGroup Inc.</p>
+      <p>This site is just ilustrative way to show my skills</p>
+      <p>Created by Jakub Janca</p>
+    </footer>
+    <script type="text/javascript" src="scripts/script_index.js"></script>
+  </body>
+</html>
